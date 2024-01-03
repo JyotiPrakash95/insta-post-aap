@@ -158,7 +158,7 @@ function createPost(author, content, image) {
     comments: [],
     image: URL.createObjectURL(image), // Use createObjectURL to display the selected image
   };
-  postsData.push(newPost);
+  postsData.unshift(newPost);
   renderPosts();
 }
 
